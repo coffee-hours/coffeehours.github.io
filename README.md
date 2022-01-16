@@ -1,7 +1,5 @@
 # [coffeehours.net][ch]
 
-This webpage contains supplemental material for [EE 445S real-time digital signal processing laboratory][realtime]
-
 ## Organization
 
 The source materials consist of MyST markdown files (.md) which are built into a webpage using [Jupyter Book][book].
