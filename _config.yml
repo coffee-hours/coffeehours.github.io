@@ -3,6 +3,7 @@
 
 title: 'coffeehours.net'
 author: 'Coffee Hours'
+copyright: "2022"
 logo: logo.svg
 
 # Information about where the book exists on the web
@@ -16,3 +17,16 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  extra_footer: |
+        <div><script src="https://giscus.app/client.js"
+        data-repo="coffee-hours/coffeehours.github.io"
+        data-repo-id="R_kgDOGr3NeQ"
+        data-category="General"
+        data-category-id="DIC_kwDOGr3Nec4CAuVZ"
+        data-mapping="title"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async></script></div>
