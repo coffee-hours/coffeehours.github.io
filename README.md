@@ -2,7 +2,11 @@
 
 ## Organization
 
-The source materials consist of MyST markdown files (.md) which are built into a webpage using [Jupyter Book][book].
+The source materials consist of MyST markdown files (.md) which are built into a webpage using [Ablog](https://ablog.readthedocs.io/en/latest/)
+
+Files the /posts folder will get turned into blog post.
+
+index.md is the landing page
 
 ## Contribute
 
@@ -14,7 +18,7 @@ The [build script](build.py) compiles the source materials into a webpage locate
 
 [ch]:https://coffeehours.net
 [dan]:https://danjacobellis.net
-[book]:https://jupyterbook.org
+
 
 
 
