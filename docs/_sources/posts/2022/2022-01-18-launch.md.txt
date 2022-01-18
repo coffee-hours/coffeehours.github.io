@@ -1,0 +1,12 @@
+---
+blogpost: true
+date: Jan 18, 2022
+author: Dan Jacobellis
+---
+
+# Launch of the coffee hours webpage
+
+We've launched the [coffee hours webpage](https://coffeehours.net)! Let us know what you'd like to see.
+
+If you'd like to contribute an article, take a look at the [GitHub repository](https://github.com/coffee-hours/coffeehours.github.io).
+
