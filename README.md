@@ -4,7 +4,7 @@
 
 The source materials consist of MyST markdown files (.md) which are built into a webpage using [Ablog](https://ablog.readthedocs.io/en/latest/)
 
-Files the /posts folder will get turned into blog post.
+Files the /posts folder will get turned into blog posts.
 
 index.md is the landing page
 

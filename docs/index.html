@@ -155,20 +155,14 @@
           
             
             <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar"><div class="profile-pic"><img src="_static/profile-bw.png" /></div>
-
-<div class="bio-info">
-    <div class="name">
-        Name
-    </div>
-    <div class="focusareas">
-        Meet others | Any Topic
-    </div>
-
-    <div class="whatido">
-        description
-    </div>
-</div>
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
             </div>
             
           
@@ -209,6 +203,7 @@
           
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
+
               <div>
                  <div class="tex2jax_ignore mathjax_ignore section" id="coffee-hours">
 <h1>Coffee Hours<a class="headerlink" href="#coffee-hours" title="Permalink to this headline">¶</a></h1>
@@ -237,6 +232,21 @@
 
               </div>
               
+<!-- Add a comment box underneath the page's content -->
+<script src="https://giscus.app/client.js"
+        data-repo="coffee-hours/coffeehours.github.io"
+        data-repo-id="R_kgDOGr3NeQ"
+        data-category="[ENTER CATEGORY NAME HERE]"
+        data-category-id="[ENTER CATEGORY ID HERE]"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
               
               <!-- Previous / next buttons -->
 <div class='prev-next-area'>

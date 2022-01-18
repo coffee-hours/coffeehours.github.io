@@ -30,8 +30,6 @@ html_theme_options = {
 html_favicon = "_static/favicon.ico"
 html_static_path = ['_static']
 html_sidebars = {
-    "index": ["hello.html"],
-    "about": ["hello.html"],
     "posts/**": ['postcard.html', 'recentposts.html', 'archives.html'],
     "blog": ['tagcloud.html', 'archives.html'],
     "blog/**": ['postcard.html', 'recentposts.html', 'archives.html']
