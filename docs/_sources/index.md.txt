@@ -5,7 +5,7 @@ Fridays 12-2pm EER Outdoor Cafe. Meet others. Any topic.
 ```{toctree}
 :maxdepth: 2
 blog
-FAQ
+faq
 ```
 
 ## Recent posts
