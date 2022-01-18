@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://coffeehours.net</id>
+  <title>Coffee Hours</title>
+  <updated>2022-01-18T21:16:15.219278+00:00</updated>
+  <link href="https://coffeehours.net"/>
+  <link href="https://coffeehours.net/blog/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.23">ABlog</generator>
+  <entry>
+    <id>https://coffeehours.net/posts/2022/2022-01-18-first-ch-of-2022.html</id>
+    <title>Title</title>
+    <updated>2022-01-18T00:00:00-06:00</updated>
+    <author>
+      <name>Dan Jacobellis</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;content&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://coffeehours.net/posts/2022/2022-01-18-first-ch-of-2022.html" rel="alternate"/>
+    <summary>content</summary>
+    <published>2022-01-18T00:00:00-06:00</published>
+  </entry>
+</feed>
