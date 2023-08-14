@@ -3278,26 +3278,7 @@ input, select, textarea {
 				height: 100vh;
 			}
 
-		#wrapper.fade-in:before {
-			pointer-events: none;
-			-moz-transition: opacity 1s ease-in-out;
-			-webkit-transition: opacity 1s ease-in-out;
-			-ms-transition: opacity 1s ease-in-out;
-			transition: opacity 1s ease-in-out;
-			-moz-transition-delay: 0s;
-			-webkit-transition-delay: 0s;
-			-ms-transition-delay: 0s;
-			transition-delay: 0s;
-			background: #a14923;
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			opacity: 0;
-			position: fixed;
-			top: 0;
-			width: 100%;
-		}
+
 
 		body.is-preload #wrapper.fade-in:before {
 			opacity: 1;
