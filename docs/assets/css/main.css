@@ -3050,7 +3050,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/bg.jpg"), url("../../images/overlay.jpg");
+			background-image: url("../../images/bg.webp"), url("../../images/overlay.webp");
 			background-size: 50% cover,								 														 50% cover;
 			background-position: top center,																				 top center;
 			background-repeat: no-repeat,																					repeat;
