@@ -204,12 +204,37 @@ input, select, textarea {
 		font-size: 4rem;
 		line-height: 1.1;
 		margin: 0 0 2rem 0;
+		text-shadow: 2.5px 2.5px #2c0203  ;
 	}
 
 	h2 {
 		font-size: 1.75rem;
 		line-height: 1.3;
 		margin: 0 0 1.5rem 0;
+	}
+
+	h2:after {
+		content:' ';
+		display:block;
+		border:2px solid #d0d0d0;
+		border-radius:4px;
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+		box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+		-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+		-moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+	}
+
+	.altTitle:after {
+		content:' ';
+		display:block;
+		border:2px solid #d0d0d0;
+		border-radius:4px;
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+		box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+		-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+		-moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
 	}
 
 	h3 {
@@ -303,7 +328,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #a14923 !important;
+			color: #b15b38 !important;
 		}
 
 	strong, b {
@@ -2110,11 +2135,11 @@ input, select, textarea {
 		button.icon.solo,
 		.button.icon.solo {
 			position: relative;
-			width: 4rem;
-			height: 4rem;
-			line-height: 4rem;
-			border-radius: 4rem;
-			text-indent: 4rem;
+			width: 3rem;
+			height: 3rem;
+			line-height: 3rem;
+			border-radius: 3rem;
+			text-indent: 3rem;
 			overflow: hidden;
 			padding: 0;
 			white-space: nowrap;
@@ -3240,7 +3265,7 @@ input, select, textarea {
 			height: 100%;
 			background-color: #212931;
 			background-image: url("../../images/bg.jpg"), linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/overlay.png");
-			background-size: 78% auto,								 auto,														 78% auto;
+			background-size: 78% contain,								 auto,														 78% auto;
 			background-position: top center,								center,														 top center;
 			background-repeat: no-repeat,								no-repeat,													repeat;
 			background-attachment: scroll,								scroll,														scroll;
@@ -3290,10 +3315,10 @@ input, select, textarea {
 
 	#intro {
 		color: #ffffff;
-		padding: 8rem 4rem 6rem 4rem ;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
+		padding: 8rem 4rem 2rem 4rem ;
+		-moz-align-items: bottom center;
+		-webkit-align-items: bottom center;
+		-ms-align-items: bottom center;
 		align-items: center;
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -3329,7 +3354,7 @@ input, select, textarea {
 
 			#intro a:hover {
 				border-bottom-color: transparent;
-				color: #a14923 !important;
+				color: #000000 !important;
 			}
 
 		#intro strong, #intro b {
@@ -3368,8 +3393,8 @@ input, select, textarea {
 			#intro input[type="button"]:hover,
 			#intro button:hover,
 			#intro .button:hover {
-				box-shadow: inset 0 0 0 2px #a14923;
-				color: #a14923 !important;
+				box-shadow: inset 0 0 0 2px #4d0d0e;
+				color: #4d0d0e !important;
 			}
 
 			#intro input[type="submit"].primary,
@@ -3454,6 +3479,7 @@ input, select, textarea {
 				opacity: 0;
 			}
 
+
 		@media screen and (max-width: 980px) {
 
 			#intro {
@@ -3474,17 +3500,22 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#intro {
-				padding: 3rem 2rem 1rem 2rem ;
+				padding: 3rem 2rem 0 2rem ;
 				min-height: 80vh;
 			}
 
 				#intro h1 {
 					font-size: 3.25rem;
 					line-height: 1.1;
-					margin-bottom: 1rem;
+					margin-bottom: 0rem;
 				}
 
 				#intro p {
+					font-size: 1rem;
+					margin-top: 0rem;
+				}
+
+				#intro logo {
 					font-size: 1rem;
 					margin-top: 0rem;
 				}
@@ -3499,10 +3530,10 @@ input, select, textarea {
 
 	#header {
 		color: #ffffff;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
+		-moz-align-items: bottom center;
+		-webkit-align-items: bottom center;
+		-ms-align-items: bottom center;
+		align-items: bottom center;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3520,10 +3551,10 @@ input, select, textarea {
 		-webkit-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
-		height: 20rem;
-		padding-bottom: 8rem;
+		height: 3.5rem;
+		padding-bottom: 0rem;
 		position: relative;
-		text-align: center;
+		text-align: bottom center;
 		z-index: 2;
 	}
 
@@ -3576,14 +3607,14 @@ input, select, textarea {
 			font-weight: 900;
 			letter-spacing: 0.075em;
 			line-height: 1;
-			padding: 1rem 1.75rem;
+			padding: .5rem .5rem;
 			text-transform: uppercase;
 			visibility: visible;
 		}
 
 			#header .logo:hover {
-				border-color: #a14923 !important;
-				color: #a14923 !important;
+				border-color: #ffffff !important;
+				
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3620,7 +3651,7 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.175);
+		background: rgba(0, 0, 0, .32);
 		height: 4rem;
 		line-height: 4rem;
 		margin: -2.5rem auto 0 auto;
@@ -3630,6 +3661,7 @@ input, select, textarea {
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+		text-shadow: 3px 3px #000000
 	}
 
 		#nav ul.divided li {
@@ -3728,6 +3760,7 @@ input, select, textarea {
 
 				#nav ul.links li.active {
 					background-color: #ffffff;
+					text-shadow: 3px 3px #ffffff
 				}
 
 					#nav ul.links li.active a {
@@ -3784,7 +3817,7 @@ input, select, textarea {
 		}
 
 		#main > .post {
-			padding: 5rem 5rem 3rem 5rem ;
+			padding: 5rem 5rem 2rem 5rem ;
 		}
 
 			#main > .post header.major {
@@ -3794,7 +3827,7 @@ input, select, textarea {
 			#main > .post header.major > h1, #main > .post header.major h2 {
 				font-size: 4rem;
 				line-height: 1.1;
-				margin: 0 0 2rem 0;
+				margin: 0 0 .5rem 0;
 			}
 
 			#main > .post.featured {
@@ -4198,7 +4231,7 @@ input, select, textarea {
 			-webkit-flex-shrink: 1;
 			-ms-flex-shrink: 1;
 			flex-shrink: 1;
-			padding: 4rem 4rem 2rem 4rem ;
+			padding: 2rem 2rem 2rem 2rem ;
 			border-left: solid 2px #e2e2e2;
 		}
 
@@ -4219,17 +4252,17 @@ input, select, textarea {
 			}
 
 				#footer > section.split > section {
-					padding: 3rem 4rem 1rem 4rem ;
+					padding: 1.75rem 1rem 1rem 4rem ;
 					border-top: solid 2px #e2e2e2;
 				}
 
 					#footer > section.split > section:first-child {
-						padding: 5rem 4rem 1rem 4rem ;
+						padding: 1.75rem 1rem 1rem 4rem ;
 						border-top: 0;
 					}
 
 					#footer > section.split > section:last-child {
-						padding: 3rem 4rem 3rem 4rem ;
+						padding: 2rem 1.75rem 1.75rem 4rem;
 					}
 
 				#footer > section.split.contact > section {
@@ -4241,7 +4274,7 @@ input, select, textarea {
 					-webkit-align-items: center;
 					-ms-align-items: center;
 					align-items: center;
-					padding: 3.15rem 4rem;
+					padding: 1.75rem 4rem;
 				}
 
 					#footer > section.split.contact > section > * {
@@ -4272,11 +4305,11 @@ input, select, textarea {
 					}
 
 					#footer > section.split.contact > section:first-child {
-						padding: 4rem 4rem 3rem 4rem;
+						padding: 2.5rem 3rem 1rem 4rem;
 					}
 
 					#footer > section.split.contact > section:last-child {
-						padding: 3rem 4rem 4rem 4rem;
+						padding: 3rem 3rem 1rem 4rem;
 					}
 
 					#footer > section.split.contact > section.alt {

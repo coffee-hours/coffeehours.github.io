@@ -10,10 +10,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/pic07.png">
+		<link rel="icon" href="images/icon.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<script type="text/javascript">			  
+			function change_url() {
+				window.history.pushState("stateObj",
+                "new page", "Gallery.html");
+			}
+		</script>
 	</head>
-	<body class="is-preload">
+	<body onload="change_url()" class="is-preload">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -29,9 +36,11 @@
 						<li><a href="index.html#nav">Welcome</a></li>
 						<li><a href="AboutCoffeeHours.html#nav">About Coffee Hours</a></li>
 						<li><a href="AboutEvans.html#nav">About Dr. Evans</a></li>
-						<li><a href="MeetingNotes.html#nav">Articles</a></li>
+						<li><a href="FAQ.html#nav">FAQ</a></li>
 						<li class="active"><a>Gallery</a></li>
-						<li><a href="Calendar.html#nav">Calendar</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href="https://github.com/coffee-hours/coffeehours.github.io" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 					</ul>
 				</nav>
 
@@ -41,7 +50,7 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1>Gallery of Student Created Content</h1>
+									<h1 style="color: #a14923" class="altTitle">Gallery of Student Created Content</h1>
 								</header>
 								<div class="gallery_container">
 
@@ -138,56 +147,51 @@
 
 
 				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
+				<footer id="footer">
+					<section>
+						<form id="my-form" action="https://formspree.io/f/xnqkpoyj" method="POST">
+							<div class="fields">
+								<div class="field">
+									<input type="hidden" name="body" value="Hi Dr. Evans, below is the email of someone who requested to be added to the mailing list:">
+									<label for="email">Join our mailing list!</label>
+									<input type="email" name="email" placeholder="Your email" id="email"/>
+									<input type="hidden" name="_subject" id="email-subject" value="New Mail List Subscriber">
+									<p id="my-form-status"></p>
+									<ul class="actions">
+										<li><input type="submit" value="Subscribe"/></li>
+									</ul>
 								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
+							</div>
+						</form>
+						<h3>Provide Site Feedback</h3>
+						<ul class="icons alt">
+							<li><a href="https://github.com/coffee-hours/coffeehours.github.io/issues" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+					<section class="split contact">
+						<section>
+							<h3>Office</h3>
+							<p>EER 6.882</p>
 						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Office</h3>
-								<p>EER 6.882</p>
-							</section>
-							<section>
-								<h3>O's Address</h3>
-								<p>2501 Speedway, Austin, TX 78712</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p>(512) 232-1457</p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:bevas@ece.utexas.edu">bevans@ece.utexas.edu</a></p>
-							</section>
-							<section>
-								<h3>Personal Website</h3>
-							    <p><a href="http://users.ece.utexas.edu/~bevans/">Prof. Brian L. Evans</a></p>
-							</section>
+						<section>
+							<h3>O's Address</h3>
+							<p>2501 Speedway, Austin, TX 78712</p>
 						</section>
-					</footer>
+						<section>
+							<h3>Email</h3>
+							<p><a href="mailto:bevas@ece.utexas.edu">bevans@ece.utexas.edu</a></p>
+						</section>
+						<section>
+							<h3>Personal Website</h3>
+							<p><a href="http://users.ece.utexas.edu/~bevans/">Prof. Brian L. Evans</a></p>
+						</section>
+					</section>
+				</footer>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Dr. Brian Evans's Coffee Hours</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Dr. Brian Evans</li></ul>
+				</div>
 
 			</div>
 
@@ -199,6 +203,39 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				var form = document.getElementById("my-form");
+				
+				async function handleSubmit(event) {
+				  event.preventDefault();
+				  var status = document.getElementById("my-form-status");
+				  var data = new FormData(event.target);
+				  fetch(event.target.action, {
+					method: form.method,
+					body: data,
+					headers: {
+						'Accept': 'application/json'
+					}
+				  }).then(response => {
+					if (response.ok) {
+					  status.innerHTML = "Thanks for subscribing!";
+					  form.reset()
+					} else {
+					  response.json().then(data => {
+						if (Object.hasOwn(data, 'errors')) {
+						  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+						} else {
+						  status.innerHTML = "Oops! There was a problem submitting your form"
+						}
+					  })
+					}
+				  }).catch(error => {
+					status.innerHTML = "Oops! There was a problem submitting your form"
+				  });
+				}
+				form.addEventListener("submit", handleSubmit)
+			</script>
 
 	</body>
 </html>
