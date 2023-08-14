@@ -80,7 +80,7 @@ input, select, textarea {
 /* Basic */
 
 	@-ms-viewport {
-		width: device-width;
+		width: "75%";
 	}
 
 	body {
@@ -3265,7 +3265,7 @@ input, select, textarea {
 			height: 100%;
 			background-color: #212931;
 			background-image: url("../../images/bg.jpg"), linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/overlay.png");
-			background-size: 78% contain,								 auto,														 78% auto;
+			background-size: 75% contain,								 auto,														 75% contain;
 			background-position: top center,								center,														 top center;
 			background-repeat: no-repeat,								no-repeat,													repeat;
 			background-attachment: scroll,								scroll,														scroll;
@@ -3306,7 +3306,8 @@ input, select, textarea {
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: auto,								auto,														auto;
+				background-size: cover;
+				background-attachment:fixed;
 			}
 
 		}
