@@ -3030,228 +3030,14 @@ input, select, textarea {
 		border-top-color: #eeeeee;
 	}
 
-/* Table */
-
-	.table-wrapper {
-		-webkit-overflow-scrolling: touch;
-		overflow-x: auto;
-	}
-
-	table {
-		margin: 0 0 2rem 0;
-		width: 100%;
-	}
-
-		table tbody tr {
-			border: solid 1px;
-			border-left: 0;
-			border-right: 0;
-		}
-
-		table td {
-			padding: 0.75rem 0.75rem;
-		}
-
-		table th {
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			font-size: 0.8rem;
-			font-weight: 900;
-			letter-spacing: 0.075em;
-			line-height: 1.5;
-			padding: 0 0.75rem 0.75rem 0.75rem;
-			text-align: left;
-			text-transform: uppercase;
-		}
-
-			@media screen and (max-width: 980px) {
-
-				table th {
-					font-size: 0.9rem;
-				}
-
-			}
-
-		table thead {
-			border-bottom: solid 2px;
-		}
-
-		table tfoot {
-			border-top: solid 2px;
-		}
-
-		table.alt {
-			border-collapse: separate;
-		}
-
-			table.alt tbody tr td {
-				border: solid 1px;
-				border-left-width: 0;
-				border-top-width: 0;
-			}
-
-				table.alt tbody tr td:first-child {
-					border-left-width: 1px;
-				}
-
-			table.alt tbody tr:first-child td {
-				border-top-width: 1px;
-			}
-
-			table.alt thead {
-				border-bottom: 0;
-			}
-
-			table.alt tfoot {
-				border-top: 0;
-			}
-
-	table tbody tr {
-		border-color: #eeeeee;
-	}
-
-		table tbody tr:nth-child(2n + 1) {
-			background-color: rgba(220, 220, 220, 0.25);
-		}
-
-	table th {
-		color: #212931;
-	}
-
-	table thead {
-		border-bottom-color: #eeeeee;
-	}
-
-	table tfoot {
-		border-top-color: #eeeeee;
-	}
-
-	table.alt tbody tr td {
-		border-color: #eeeeee;
-	}
-
-/* Pagination */
-
-	.pagination {
-		display: -moz-inline-flex;
-		display: -webkit-inline-flex;
-		display: -ms-inline-flex;
-		display: inline-flex;
-		-moz-user-select: none;
-		-webkit-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-		cursor: default;
-		list-style: none;
-		margin: 0 0 2rem 2px;
-		padding: 0;
-	}
-
-		.pagination a, .pagination span {
-			-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-			-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-			-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-			transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-			border: solid 2px;
-			display: inline-block;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			font-size: 0.8rem;
-			font-weight: 900;
-			height: 3rem;
-			letter-spacing: 0.075em;
-			line-height: calc(3rem - 4px);
-			margin-left: -2px;
-			min-width: 3rem;
-			position: relative;
-			text-align: center;
-			text-decoration: none;
-			text-transform: uppercase;
-		}
-
-		.pagination .next, .pagination .previous {
-			text-decoration: none;
-			padding: 0 1.75rem;
-		}
-
-			.pagination .next:before, .pagination .previous:before {
-				-moz-osx-font-smoothing: grayscale;
-				-webkit-font-smoothing: antialiased;
-				display: inline-block;
-				font-style: normal;
-				font-variant: normal;
-				text-rendering: auto;
-				line-height: 1;
-				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
-				font-weight: 900;
-			}
-
-			.pagination .next:before, .pagination .previous:before {
-				display: inline-block;
-				color: inherit !important;
-				line-height: inherit;
-			}
-
-		.pagination .previous:before {
-			content: '\f104';
-			margin-right: 0.9375em;
-		}
-
-		.pagination .next:before {
-			content: '\f105';
-			float: right;
-			margin-left: 0.9375em;
-		}
-
-		@media screen and (max-width: 980px) {
-
-			.pagination a, .pagination span {
-				font-size: 0.9rem;
-			}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			.pagination .page, .pagination .extra {
-				display: none;
-			}
-
-		}
-
-	.pagination a, .pagination span {
-		border-color: #eeeeee;
-	}
-
-	.pagination a {
-		color: #212931 !important;
-	}
-
-		.pagination a:hover {
-			color: #a14923 !important;
-			border-color: #a14923;
-			z-index: 1;
-		}
-
-			.pagination a:hover + a,
-			.pagination a:hover + span {
-				border-left-color: #a14923;
-			}
-
-		.pagination a.active {
-			background-color: #eeeeee;
-		}
-
-	.pagination span {
-		color: #eeeeee;
-	}
 
 /* Wrapper */
 
 	#wrapper {
-		-moz-transition: opacity 0.5s ease;
-		-webkit-transition: opacity 0.5s ease;
-		-ms-transition: opacity 0.5s ease;
-		transition: opacity 0.5s ease;
+		-moz-transition: opacity 0.1s ease;
+		-webkit-transition: opacity 0.1s ease;
+		-ms-transition: opacity 0.1s ease;
+		transition: opacity 0.1s ease;
 		position: relative;
 		z-index: 1;
 		overflow: hidden;
@@ -3278,7 +3064,26 @@ input, select, textarea {
 				height: 100vh;
 			}
 
-
+		#wrapper.fade-in:before {
+			pointer-events: none;
+			-moz-transition: opacity 0.1s ease-in-out;
+			-webkit-transition: opacity 0.1s ease-in-out;
+			-ms-transition: opacity 0.1s ease-in-out;
+			transition: opacity 0.1s ease-in-out;
+			-moz-transition-delay: 0s;
+			-webkit-transition-delay: 0s;
+			-ms-transition-delay: 0s;
+			transition-delay: 0s;
+			background: #a14923;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
 
 		body.is-preload #wrapper.fade-in:before {
 			opacity: 1;
@@ -3314,10 +3119,10 @@ input, select, textarea {
 		-webkit-justify-content: -webkit-flex-end;
 		-ms-justify-content: -ms-flex-end;
 		justify-content: flex-end;
-		-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-		transition: opacity 1s ease, transform 1s ease;
+		-moz-transition: opacity 0.2s ease, -moz-transform 0.2s ease;
+		-webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+		-ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
+		transition: opacity 0.2s ease, transform 0.2ss ease;
 		position: relative;
 		cursor: default;
 		text-align: center;
@@ -3428,10 +3233,10 @@ input, select, textarea {
 			-webkit-transform: translateY(2rem);
 			-ms-transform: translateY(2rem);
 			transform: translateY(2rem);
-			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, visibility 0.5s;
-			-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
-			-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
-			transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+			-moz-transition: opacity 0.2s ease, -moz-transform 0.2s ease, visibility 0.2s;
+			-webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease, visibility 0.2s;
+			-ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease, visibility 0.2s;
+			transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
 			opacity: 0;
 			visibility: hidden;
 		}
@@ -3576,10 +3381,10 @@ input, select, textarea {
 		}
 
 		#header .logo {
-			-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -moz-transform 0.5s ease, visibility 0.5s;
-			-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
-			-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
-			transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+			-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease, -moz-transform 0.2s ease, visibility 0.2s;
+			-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease, -webkit-transform 0.2s ease, visibility 0.2s;
+			-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease, -ms-transform 0.2s ease, visibility 0.2s;
+			transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
 			pointer-events: auto;
 			border-style: solid;
 			border-color: #ffffff;
@@ -3629,10 +3434,10 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		-moz-transition: -moz-transform 1s ease, opacity 1s ease;
-		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
-		transition: transform 1s ease, opacity 1s ease;
+		-moz-transition: -moz-transform 0.2s ease, opacity 0.2s ease;
+		-webkit-transition: -webkit-transform 0.2s ease, opacity 0.2s ease;
+		-ms-transition: -ms-transform 0.2s ease, opacity 0.2s ease;
+		transition: transform 0.2s ease, opacity 0.2s ease;
 		background: rgba(0, 0, 0, .32);
 		height: 4rem;
 		line-height: 4rem;
@@ -4571,10 +4376,10 @@ input, select, textarea {
 		-webkit-transform: translateX(20rem);
 		-ms-transform: translateX(20rem);
 		transform: translateX(20rem);
-		-moz-transition: -moz-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-		-webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+		-moz-transition: -moz-transform 0.2s ease, box-shadow 0.2s ease, visibility 0.2s;
+		-webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.2s ease, visibility 0.2s;
+		-ms-transition: -ms-transform 0.2s ease, box-shadow 0.2s ease, visibility 0.2s;
+		transition: transform 0.2s ease, box-shadow 0.2s ease, visibility 0.2s;
 		display: none;
 		-webkit-overflow-scrolling: touch;
 		background: #ffffff;
@@ -4702,86 +4507,3 @@ input, select, textarea {
 		}
 
 	}
-
-	/* Position the image container (needed to position the left and right arrows) */
-.container {
-	position: relative;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-	display: none;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-	cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next_slide {
-	cursor: pointer;
-	position: absolute;
-	top: 40%;
-	width: auto;
-	padding: 16px;
-	margin-top: -50px;
-	color: white;
-	font-weight: bold;
-	font-size: 20px;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
-	-webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next_slide {
-	right: 107px;
-	border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next_slide:hover {
-	background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-	color: #f2f2f2;
-	font-size: 12px;
-	padding: 8px 12px;
-	position: absolute;
-	top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-	text-align: center;
-	background-color: #222;
-	padding: 2px 16px;
-	color: white;
-  }
-  
-  .row:after {
-	content: "";
-	display: table;
-	clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
-	float: left;
-	width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-	opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-	opacity: 1;
-  }
