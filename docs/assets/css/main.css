@@ -3430,7 +3430,7 @@ table.alt tbody tr td {
 		}
 
 		#intro + #header {
-			margin-top: -21rem;
+			margin-top: -17rem;
 		}
 
 			#intro + #header .logo {
@@ -3549,7 +3549,7 @@ table.alt tbody tr td {
 		-ms-user-select: none;
 		user-select: none;
 		height: 20rem;
-		padding-bottom: 2rem;
+		padding-bottom: 1rem;
 		position: relative;
 		text-align: bottom center;
 		z-index: 2;
@@ -3604,7 +3604,7 @@ table.alt tbody tr td {
 			font-weight: 900;
 			letter-spacing: 0.075em;
 			line-height: 1;
-			padding: .5rem .5rem;
+			padding: 1rem 1rem;
 			text-transform: uppercase;
 			visibility: visible;
 		}
