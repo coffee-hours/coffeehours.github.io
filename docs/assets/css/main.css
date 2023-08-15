@@ -3051,14 +3051,11 @@ input, select, textarea {
 			height: 100%;
 			background-color: #212931;
 			background-image: url("../../images/bg.webp"), url("../../images/overlay.webp");
-			background-size: 75% cover,								 														 75% cover;
+			background-size: 65% cover,								 														 65% cover;
 			background-position: top center,																				 top center;
 			background-repeat: no-repeat,																					repeat;
 			background-attachment: scroll,																			scroll;
 			z-index: -1;
-			
-			max-width: 100vw;
-            overflow-y: scroll;
 		}
 
 			#wrapper > .bg.fixed {
@@ -3094,6 +3091,7 @@ input, select, textarea {
 
 			#wrapper > .bg {
 				background-size: contain;
+				background-attachment: fixed;
 			}
 
 		}
