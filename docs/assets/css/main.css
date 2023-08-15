@@ -3051,18 +3051,17 @@ input, select, textarea {
 			height: 100%;
 			background-color: #212931;
 			background-image: url("../../images/bg.webp"), url("../../images/overlay.webp");
-			background-size: 50% cover,								 														 50% cover;
+			background-size: 75% auto,								 														 75% auto;
 			background-position: top center,																				 top center;
 			background-repeat: no-repeat,																					repeat;
 			background-attachment: scroll,																			scroll;
 			z-index: -1;
-			max-height: 100vh;
+			
 			max-width: 100vw;
             overflow-y: scroll;
 		}
 
 			#wrapper > .bg.fixed {
-				position: fixed;
 				width: 100vw;
 				height: 100vh;
 			}
@@ -3083,7 +3082,6 @@ input, select, textarea {
 			height: 100%;
 			left: 0;
 			opacity: 0;
-			position: fixed;
 			top: 0;
 			width: 100%;
 		}
@@ -3095,7 +3093,7 @@ input, select, textarea {
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: contain;
+				background-size: auto;
 			}
 
 		}
