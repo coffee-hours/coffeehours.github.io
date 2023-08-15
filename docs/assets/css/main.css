@@ -80,7 +80,7 @@ input, select, textarea {
 /* Basic */
 
 	@-ms-viewport {
-		width: "75%";
+		width: device-width;
 	}
 
 	body {
@@ -3030,6 +3030,220 @@ input, select, textarea {
 		border-top-color: #eeeeee;
 	}
 
+/* Table */
+
+.table-wrapper {
+	-webkit-overflow-scrolling: touch;
+	overflow-x: auto;
+}
+
+table {
+	margin: 0 0 2rem 0;
+	width: 100%;
+}
+
+	table tbody tr {
+		border: solid 1px;
+		border-left: 0;
+		border-right: 0;
+	}
+
+	table td {
+		padding: 0.75rem 0.75rem;
+	}
+
+	table th {
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 0.8rem;
+		font-weight: 900;
+		letter-spacing: 0.075em;
+		line-height: 1.5;
+		padding: 0 0.75rem 0.75rem 0.75rem;
+		text-align: left;
+		text-transform: uppercase;
+	}
+
+		@media screen and (max-width: 980px) {
+
+			table th {
+				font-size: 0.9rem;
+			}
+
+		}
+
+	table thead {
+		border-bottom: solid 2px;
+	}
+
+	table tfoot {
+		border-top: solid 2px;
+	}
+
+	table.alt {
+		border-collapse: separate;
+	}
+
+		table.alt tbody tr td {
+			border: solid 1px;
+			border-left-width: 0;
+			border-top-width: 0;
+		}
+
+			table.alt tbody tr td:first-child {
+				border-left-width: 1px;
+			}
+
+		table.alt tbody tr:first-child td {
+			border-top-width: 1px;
+		}
+
+		table.alt thead {
+			border-bottom: 0;
+		}
+
+		table.alt tfoot {
+			border-top: 0;
+		}
+
+table tbody tr {
+	border-color: #eeeeee;
+}
+
+	table tbody tr:nth-child(2n + 1) {
+		background-color: rgba(220, 220, 220, 0.25);
+	}
+
+table th {
+	color: #212931;
+}
+
+table thead {
+	border-bottom-color: #eeeeee;
+}
+
+table tfoot {
+	border-top-color: #eeeeee;
+}
+
+table.alt tbody tr td {
+	border-color: #eeeeee;
+}
+
+/* Pagination */
+
+.pagination {
+	display: -moz-inline-flex;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flex;
+	display: inline-flex;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+	list-style: none;
+	margin: 0 0 2rem 2px;
+	padding: 0;
+}
+
+	.pagination a, .pagination span {
+		-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		border: solid 2px;
+		display: inline-block;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 0.8rem;
+		font-weight: 900;
+		height: 3rem;
+		letter-spacing: 0.075em;
+		line-height: calc(3rem - 4px);
+		margin-left: -2px;
+		min-width: 3rem;
+		position: relative;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	.pagination .next, .pagination .previous {
+		text-decoration: none;
+		padding: 0 1.75rem;
+	}
+
+		.pagination .next:before, .pagination .previous:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
+		}
+
+		.pagination .next:before, .pagination .previous:before {
+			display: inline-block;
+			color: inherit !important;
+			line-height: inherit;
+		}
+
+	.pagination .previous:before {
+		content: '\f104';
+		margin-right: 0.9375em;
+	}
+
+	.pagination .next:before {
+		content: '\f105';
+		float: right;
+		margin-left: 0.9375em;
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.pagination a, .pagination span {
+			font-size: 0.9rem;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		.pagination .page, .pagination .extra {
+			display: none;
+		}
+
+	}
+
+.pagination a, .pagination span {
+	border-color: #eeeeee;
+}
+
+.pagination a {
+	color: #212931 !important;
+}
+
+	.pagination a:hover {
+		color: #a14923 !important;
+		border-color: #a14923;
+		z-index: 1;
+	}
+
+		.pagination a:hover + a,
+		.pagination a:hover + span {
+			border-left-color: #a14923;
+		}
+
+	.pagination a.active {
+		background-color: #eeeeee;
+	}
+
+.pagination span {
+	color: #eeeeee;
+}
 
 /* Wrapper */
 
@@ -3102,7 +3316,7 @@ input, select, textarea {
 
 	#intro {
 		color: #ffffff;
-		padding: 8rem 4rem 2rem 4rem ;
+		padding: 8rem 4rem 3rem 4rem ;
 		-moz-align-items: bottom center;
 		-webkit-align-items: bottom center;
 		-ms-align-items: bottom center;
@@ -3123,7 +3337,7 @@ input, select, textarea {
 		-webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
 		-ms-transition: opacity 1.5s ease, -ms-transform 1.5s ease;
 		transition: opacity 1.5s ease, transform 1.5s ease;
-		transition-delay: 1.5s;
+		transition-delay: 1s;
 		position: relative;
 		cursor: default;
 		text-align: center;
@@ -3216,7 +3430,7 @@ input, select, textarea {
 		}
 
 		#intro + #header {
-			margin-top: -20rem;
+			margin-top: -21rem;
 		}
 
 			#intro + #header .logo {
@@ -3280,7 +3494,7 @@ input, select, textarea {
 				}
 
 				#intro + #header {
-					margin-top: -14rem;
+					margin-top: -10rem;
 				}
 
 		}
@@ -3288,22 +3502,17 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#intro {
-				padding: 3rem 2rem 0 2rem ;
+				padding: 3rem 3rem 1rem 2rem ;
 				min-height: 80vh;
 			}
 
 				#intro h1 {
 					font-size: 3.25rem;
 					line-height: 1.1;
-					margin-bottom: 0rem;
+					margin-bottom: 1rem;
 				}
 
 				#intro p {
-					font-size: 1rem;
-					margin-top: 0rem;
-				}
-
-				#intro logo {
 					font-size: 1rem;
 					margin-top: 0rem;
 				}
@@ -3318,10 +3527,10 @@ input, select, textarea {
 
 	#header {
 		color: #ffffff;
-		-moz-align-items: bottom center;
-		-webkit-align-items: bottom center;
-		-ms-align-items: bottom center;
-		align-items: bottom center;
+		-moz-align-items:  center;
+		-webkit-align-items:  center;
+		-ms-align-items:  center;
+		align-items:  center;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3339,8 +3548,8 @@ input, select, textarea {
 		-webkit-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
-		height: 3.5rem;
-		padding-bottom: 0rem;
+		height: 20rem;
+		padding-bottom: 2rem;
 		position: relative;
 		text-align: bottom center;
 		z-index: 2;
@@ -3635,6 +3844,11 @@ input, select, textarea {
 				#main > .post {
 					padding: 4rem 2rem 2rem 2rem ;
 				}
+
+					#main > .post header.major > .date {
+						margin-top: -1rem;
+						margin-bottom: 2rem;
+					}
 
 					#main > .post header.major > h1, #main > .post header.major h2 {
 						font-size: 2.5rem;
