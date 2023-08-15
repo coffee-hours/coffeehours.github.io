@@ -3051,7 +3051,7 @@ input, select, textarea {
 			height: 100%;
 			background-color: #212931;
 			background-image: url("../../images/bg.webp"), url("../../images/overlay.webp");
-			background-size: 65% cover,								 														 65% cover;
+			background-size: 50% cover,								 														 50% cover;
 			background-position: top center,																				 top center;
 			background-repeat: no-repeat,																					repeat;
 			background-attachment: scroll,																			scroll;
@@ -3059,6 +3059,7 @@ input, select, textarea {
 		}
 
 			#wrapper > .bg.fixed {
+				position: fixed;
 				width: 100vw;
 				height: 100vh;
 			}
@@ -3079,6 +3080,7 @@ input, select, textarea {
 			height: 100%;
 			left: 0;
 			opacity: 0;
+			position: fixed;
 			top: 0;
 			width: 100%;
 		}
@@ -3090,8 +3092,8 @@ input, select, textarea {
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: contain;
-				background-attachment: fixed;
+				background-size: cover;
+				background-attachment:fixed;
 			}
 
 		}
@@ -3117,10 +3119,10 @@ input, select, textarea {
 		-webkit-justify-content: -webkit-flex-end;
 		-ms-justify-content: -ms-flex-end;
 		justify-content: flex-end;
-		-moz-transition: opacity 1.25s ease, -moz-transform 1.25s ease;
-		-webkit-transition: opacity 1.25s ease, -webkit-transform 1.25s ease;
-		-ms-transition: opacity 1.25s ease, -ms-transform 1.25s ease;
-		transition: opacity 1.25s ease, transform 1.5s ease;
+		-moz-transition: opacity 1.5s ease, -moz-transform 1.5s ease;
+		-webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+		-ms-transition: opacity 1.5s ease, -ms-transform 1.5s ease;
+		transition: opacity 1.5s ease, transform 1.5s ease;
 		position: relative;
 		cursor: default;
 		text-align: center;
