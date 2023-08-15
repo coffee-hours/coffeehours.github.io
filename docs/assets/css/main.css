@@ -3051,7 +3051,7 @@ input, select, textarea {
 			height: 100%;
 			background-color: #212931;
 			background-image: url("../../images/bg.webp"), url("../../images/overlay.webp");
-			background-size: 75% auto,								 														 75% auto;
+			background-size: 75% cover,								 														 75% cover;
 			background-position: top center,																				 top center;
 			background-repeat: no-repeat,																					repeat;
 			background-attachment: scroll,																			scroll;
@@ -3093,7 +3093,7 @@ input, select, textarea {
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: auto;
+				background-size: contain;
 			}
 
 		}
