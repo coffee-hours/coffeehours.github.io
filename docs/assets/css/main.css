@@ -3066,10 +3066,10 @@ input, select, textarea {
 
 		#wrapper.fade-in:before {
 			pointer-events: none;
-			-moz-transition: opacity 1.25s ease-in-out;
-			-webkit-transition: opacity 1.25s ease-in-out;
-			-ms-transition: opacity 1.25s ease-in-out;
-			transition: opacity 1.25s ease-in-out;
+			-moz-transition: opacity 1.5s ease-in-out;
+			-webkit-transition: opacity 1.5s ease-in-out;
+			-ms-transition: opacity 1.5s ease-in-out;
+			transition: opacity 1.5s ease-in-out;
 			-moz-transition-delay: 0s;
 			-webkit-transition-delay: 0s;
 			-ms-transition-delay: 0s;
@@ -3123,6 +3123,7 @@ input, select, textarea {
 		-webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
 		-ms-transition: opacity 1.5s ease, -ms-transform 1.5s ease;
 		transition: opacity 1.5s ease, transform 1.5s ease;
+		transition-delay: 1.5s;
 		position: relative;
 		cursor: default;
 		text-align: center;
