@@ -3057,6 +3057,7 @@ input, select, textarea {
 			background-attachment: scroll,																			scroll;
 			z-index: -1;
 			max-height: 100vh;
+			max-width: 100vw;
             overflow-y: scroll;
 		}
 
@@ -3094,8 +3095,7 @@ input, select, textarea {
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: cover;
-				background-attachment:fixed;
+				background-size: contain;
 			}
 
 		}
