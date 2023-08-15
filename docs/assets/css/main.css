@@ -3056,6 +3056,8 @@ input, select, textarea {
 			background-repeat: no-repeat,																					repeat;
 			background-attachment: scroll,																			scroll;
 			z-index: -1;
+			max-height: 100vh;
+            overflow-y: scroll;
 		}
 
 			#wrapper > .bg.fixed {
